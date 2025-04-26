@@ -45,8 +45,8 @@ const testRoute = require('./routes/test');
 app.use('/test', testRoute);
 
 // 라우트 추가
-const rawRoute = require('./routes/raw');
-app.use('/raw', rawRoute);
+const rawRoute = require('./routes/read');
+app.use('/read', rawRoute);
 
 const updateRoute = require('./routes/update');
 app.use('/update', updateRoute);
