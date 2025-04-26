@@ -37,16 +37,16 @@ const swaggerSpec = swaggerJSDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // 라우트 추가
-const sampleRoute = require('./routes/sample.js');
-app.use('/sample', sampleRoute);
+const readAllRoute = require('./routes/readAll');
+app.use('/readAll', readAllRoute);
 
 // 라우트 추가
-const testRoute = require('./routes/test');
-app.use('/test', testRoute);
+const dateRoute = require('./routes/setDate');
+app.use('/setDate', dateRoute);
 
 // 라우트 추가
-const rawRoute = require('./routes/read');
-app.use('/read', rawRoute);
+const readRoute = require('./routes/read');
+app.use('/read', readRoute);
 
 const updateRoute = require('./routes/update');
 app.use('/update', updateRoute);
